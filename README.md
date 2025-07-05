@@ -1,2 +1,7 @@
-# MyPortfolio
-This repository contains all my personal programming projects.
+## Trading Strategy Generator
+
+Method: Use PySR
+
+Input: Price data
+
+Output: Trade
