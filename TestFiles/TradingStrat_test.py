@@ -45,11 +45,9 @@ def RSIDiv():
     # transform into dataframe        
     bullish_divs = pd.DataFrame(bullish_divs)
 
-
     # check if there is a RSI-based divergence among the peaks
     peak_points = priceData[priceData['peak']].copy()
     peak_points.reset_index(inplace=True)
-
     
     # Detect bearish divergences on peaks
     bearish_divs = []
@@ -129,6 +127,8 @@ RSIDiv_trades = RSIDiv()
 # another set of trades created by another function
 df =  RSIDiv_trades.copy()
 
+print(df)
+
 ## Compare trading strategies
 # Add column to classify trade outcome
 df['win'] = df['pct_change'] > 0
@@ -172,23 +172,23 @@ fig.add_trace(go.Candlestick(
     name='Price'
     ), row=1, col=1)
 
-# # Add major low markers (triangle-up, green)
-# fig.add_trace(go.Scatter(
-#     x=major_lows['time'],
-#     y=major_lows['close'],
-#     mode='markers',
-#     marker=dict(symbol='triangle-up', color='green', size=10),
-#     name='Major Low'
-# ))
+# Add major low markers (triangle-up, green)
+fig.add_trace(go.Scatter(
+    x=major_lows['time'],
+    y=major_lows['close'],
+    mode='markers',
+    marker=dict(symbol='triangle-up', color='green', size=10),
+    name='Major Low'
+))
 
-# # Add major high markers (triangle-down, red)
-# fig.add_trace(go.Scatter(
-#     x=major_highs['time'],
-#     y=major_highs['close'],
-#     mode='markers',
-#     marker=dict(symbol='triangle-down', color='red', size=10),
-#     name='Major High'
-# ))
+# Add major high markers (triangle-down, red)
+fig.add_trace(go.Scatter(
+    x=major_highs['time'],
+    y=major_highs['close'],
+    mode='markers',
+    marker=dict(symbol='triangle-down', color='red', size=10),
+    name='Major High'
+))
 
 # --- Bollinger Bands ---
 fig.add_trace(go.Scatter(
@@ -234,7 +234,7 @@ fig.add_shape(type='line', x0=priceData['time'].min(), x1=priceData['time'].max(
               y0=30, y1=30, line=dict(color='green', dash='dash'), row=2, col=1)
 
 # Add shapes and annotations per trade
-for _, trade in RSIDiv_trades.iterrows():
+for _, trade in trades.iterrows():
     entry_time = trade['entry_time']
     exit_time = trade['exit_time']
     entry_price = trade['entry_price']

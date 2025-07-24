@@ -9,11 +9,24 @@ Output: Optimal Trade Strategies
 Likelihood, computed by 
 
 
-### Step Plan
+### OLD Step Plan
 1. Create price plot that includes RSI, and trades alongside moving averages/bollinger bands. - DONE
 2. Create a function that finds trade entries based on RSI divergence. - DONE
 3. Create a function that finds trade exits based on RSI divergence. - DONE (Not a succesfull strategy)
-4. Create a function that computes trade strategy success based on win-rate, trade frequency, and profits. Profits * win-rate * frequency?? - DONE
+4. Create a function that computes trade strategy success based on win-rate, trade frequency, and profits. Profits * win-rate * frequency?? - DONEISH
+5. Create TopStrat.py containing working version with the easiest grammar and strategy. - DONEISH
+6. Implement more complex variables alongside a grammar that enables advanced strategies. - WORKING
+7. Get good strategy that makes sense.
+8. Combine time-frames to make more holistically informed decisions.
+
+### NEW Step Plan To Trading-Bot
+1. First complete the 1 Day - Week trading strategy prototype, and backtest on other data.
+    -  Create more advanced features that are low in train-time complexity (pivot-high/low detection, and price-range logic (kda), RSI-divergence)
+2. Create a second model that creates swing-trade strategies on 1 day - 1 hour time-frame. (Create a new file for this, but use a lot of the same code as a framework).
+3. Create a scalping strategy that works with 1 hours to 5 min data.
+    - Use the strategy and create a tradingbot that would use API of a crypto exchange to actually make trades.
+    - Create trading data dashboard (i.e., already created plots + trade data, but also store trade data in csv and create good tables of performance).
+    - First do paper-trading with the bot on live data.
 
 ### Symbolic Regression Implementation
 Data = Price and indicator per candle
