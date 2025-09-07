@@ -1,0 +1,11 @@
+,posterior,prior,likelihood,rule
+0,10.33690237252447,-37.248262575730024,47.585164948254494,"""lambda x: tuple_(not_(g_(get_(x, i, ""RSI""), 18)), and_(not_(ge_(get_(x, i, ""RSI""), getp_(x, i, 20, ""ADX""))), getp_(x, i, 2, ""morning_star"")), 1, 2.0)"""
+1,12.864018682725195,-39.5802197470364,52.4442384297616,"""lambda x: tuple_(not_(g_(get_(x, i, ""RSI""), 18)), and_(not_(ge_(get_(x, i, ""RSI""), getp_(x, i, 21, ""ADX""))), not_(ge_(get_(x, i, ""ADX""), 34))), 1, 5.0)"""
+2,12.864018682725195,-39.5802197470364,52.4442384297616,"""lambda x: tuple_(not_(g_(get_(x, i, ""RSI""), 18)), and_(not_(ge_(get_(x, i, ""RSI""), getp_(x, i, 21, ""ADX""))), not_(ge_(get_(x, i, ""ADX""), 34))), 1, 0.5)"""
+3,12.912808846894627,-39.53142958286697,52.4442384297616,"""lambda x: tuple_(not_(g_(get_(x, i, ""RSI""), 18)), and_(not_(ge_(get_(x, i, ""RSI""), getp_(x, i, 20, ""ADX""))), not_(ge_(get_(x, i, ""ADX""), 34))), 1, 5.0)"""
+4,13.135952398208836,-39.30828603155276,52.4442384297616,"""lambda x: tuple_(not_(g_(get_(x, i, ""RSI""), 18)), and_(not_(ge_(get_(x, i, ""RSI""), getp_(x, i, 16, ""ADX""))), not_(ge_(get_(x, i, ""ADX""), 34))), 1, 4.5)"""
+5,13.135952398208836,-39.30828603155276,52.4442384297616,"""lambda x: tuple_(not_(g_(get_(x, i, ""RSI""), 18)), and_(not_(ge_(get_(x, i, ""RSI""), getp_(x, i, 16, ""ADX""))), not_(ge_(get_(x, i, ""ADX""), 34))), 1, 5.0)"""
+6,13.135952398208836,-39.30828603155276,52.4442384297616,"""lambda x: tuple_(not_(g_(get_(x, i, ""RSI""), 18)), and_(not_(ge_(get_(x, i, ""RSI""), getp_(x, i, 16, ""ADX""))), not_(ge_(get_(x, i, ""ADX""), 34))), 1, 2.0)"""
+7,13.135952398208836,-39.30828603155276,52.4442384297616,"""lambda x: tuple_(not_(g_(get_(x, i, ""RSI""), 18)), and_(not_(ge_(get_(x, i, ""RSI""), getp_(x, i, 16, ""ADX""))), not_(ge_(get_(x, i, ""ADX""), 34))), 1, 0.5)"""
+8,13.135952398208836,-39.30828603155276,52.4442384297616,"""lambda x: tuple_(not_(g_(get_(x, i, ""RSI""), 18)), and_(not_(ge_(get_(x, i, ""RSI""), getp_(x, i, 16, ""ADX""))), not_(ge_(get_(x, i, ""ADX""), 34))), 1, 3.0)"""
+9,19.151071090883583,-34.91081673782293,54.06188782870651,"""lambda x: tuple_(not_(g_(get_(x, i, ""RSI""), 18)), and_(not_(ge_(get_(x, i, ""RSI""), getp_(x, i, 16, ""ADX""))), not_(get_(x, i, ""green""))), 1, 0.5)"""

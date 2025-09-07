@@ -1,0 +1,11 @@
+,posterior,prior,likelihood,rule
+0,-8.83663120656426,-19.694759144457446,10.858127937893187,"""lambda x: tuple_(le_(get_(x, i, ""open""), get_(x, i, ""close"")), not_(l_(get_(x, i, ""open""), get_(x, i, ""high""))), 1, 2.0)"""
+1,-8.83663120656426,-19.694759144457446,10.858127937893187,"""lambda x: tuple_(not_(g_(get_(x, i, ""open""), get_(x, i, ""close""))), e_(get_(x, i, ""high""), get_(x, i, ""open"")), 1, 2.0)"""
+2,-8.83663120656426,-19.694759144457446,10.858127937893187,"""lambda x: tuple_(not_(l_(get_(x, i, ""close""), get_(x, i, ""open""))), e_(get_(x, i, ""high""), get_(x, i, ""open"")), 1, 2.0)"""
+3,-8.83663120656426,-19.694759144457446,10.858127937893187,"""lambda x: tuple_(not_(le_(get_(x, i, ""close""), get_(x, i, ""open""))), le_(get_(x, i, ""high""), get_(x, i, ""open"")), 1, 2.0)"""
+4,-8.83663120656426,-19.694759144457446,10.858127937893187,"""lambda x: tuple_(not_(l_(get_(x, i, ""close""), get_(x, i, ""open""))), ge_(get_(x, i, ""open""), get_(x, i, ""high"")), 1, 2.0)"""
+5,-8.83663120656426,-19.694759144457446,10.858127937893187,"""lambda x: tuple_(g_(get_(x, i, ""close""), get_(x, i, ""open"")), not_(g_(get_(x, i, ""high""), get_(x, i, ""open""))), 1, 2.0)"""
+6,-8.83663120656426,-19.694759144457446,10.858127937893187,"""lambda x: tuple_(not_(ge_(get_(x, i, ""open""), get_(x, i, ""close""))), e_(get_(x, i, ""open""), get_(x, i, ""high"")), 1, 2.0)"""
+7,-8.83663120656426,-19.694759144457446,10.858127937893187,"""lambda x: tuple_(not_(le_(get_(x, i, ""close""), get_(x, i, ""open""))), e_(get_(x, i, ""open""), get_(x, i, ""high"")), 1, 2.0)"""
+8,-8.61348765525005,-19.471615593143238,10.858127937893187,"""lambda x: tuple_(le_(get_(x, i, ""open""), get_(x, i, ""close"")), e_(get_(x, i, ""high""), get_(x, i, ""open"")), 1, 2.0)"""
+9,-8.61348765525005,-19.471615593143238,10.858127937893187,"""lambda x: tuple_(ge_(get_(x, i, ""close""), get_(x, i, ""open"")), e_(get_(x, i, ""open""), get_(x, i, ""high"")), 1, 2.0)"""

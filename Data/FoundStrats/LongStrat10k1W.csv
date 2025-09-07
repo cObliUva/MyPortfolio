@@ -1,0 +1,11 @@
+,posterior,prior,likelihood,rule
+0,-11.419149020410304,-19.727868356331697,8.308719335921394,"""lambda x: tuple_(not_(e_(get_(x, i, ""Signal""), 1)), get_(x, i, ""shooting_star""), 1, 4.5)"""
+1,-11.214029887934105,-19.875329168212595,8.66129928027849,"""lambda x: tuple_(not_(e_(get_(x, i, ""RSI-based MA""), get_(x, i, ""RSI""))), get_(x, i, ""shooting_star""), 1, 1.0)"""
+2,-11.214029887934105,-19.875329168212595,8.66129928027849,"""lambda x: tuple_(not_(e_(get_(x, i, ""Histogram""), get_(x, i, ""RSI""))), get_(x, i, ""shooting_star""), 1, 1.0)"""
+3,-11.066569076053208,-19.727868356331697,8.66129928027849,"""lambda x: tuple_(not_(e_(get_(x, i, ""Histogram""), 1)), get_(x, i, ""shooting_star""), 1, 1.0)"""
+4,-10.4154800791453,-18.689705502554858,8.274225423409558,"""lambda x: tuple_(not_(get_(x, i, ""standard_doji"")), get_(x, i, ""shooting_star""), 1, 5.0)"""
+5,-10.022018113724123,-19.21704273256571,9.195024618841586,"""lambda x: tuple_(not_(e_(get_(x, i, ""Histogram""), 1)), get_(x, i, ""shooting_star""), 1, 0)"""
+6,-10.022018113724123,-19.21704273256571,9.195024618841586,"""lambda x: tuple_(not_(e_(get_(x, i, ""Signal""), 1)), get_(x, i, ""shooting_star""), 1, 0)"""
+7,-9.704259327808147,-18.17887987878887,8.474620550980722,"""lambda x: tuple_(not_(get_(x, i, ""standard_doji"")), get_(x, i, ""inverted_hammer""), 1, 0)"""
+8,-9.545119698959127,-19.875329168212595,10.330209469253468,"""lambda x: tuple_(not_(l_(get_(x, i, ""RSI""), get_(x, i, ""RSI-based MA""))), get_(x, i, ""inverted_hammer""), 1, 1.0)"""
+9,-9.32442457868525,-18.17887987878887,8.85445530010362,"""lambda x: tuple_(not_(get_(x, i, ""standard_doji"")), get_(x, i, ""shooting_star""), 1, 0)"""

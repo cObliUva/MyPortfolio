@@ -1,0 +1,11 @@
+,posterior,prior,likelihood,rule
+0,-10.07002132696757,-20.505689360673777,10.435668033706207,"""lambda x: tuple_(not_(g_(get_(x, i, ""MACD""), get_(x, i, ""Histogram""))), le_(get_(x, i, ""high""), get_(x, i, ""open"")), 1, 3.5)"""
+1,-9.958200138962889,-19.694759144457446,9.736559005494557,"""lambda x: tuple_(not_(l_(get_(x, i, ""open""), get_(x, i, ""low""))), le_(get_(x, i, ""high""), get_(x, i, ""open"")), 1, 4.5)"""
+2,-9.958200138962889,-19.694759144457446,9.736559005494557,"""lambda x: tuple_(not_(l_(get_(x, i, ""open""), get_(x, i, ""open""))), le_(get_(x, i, ""high""), get_(x, i, ""open"")), 1, 4.5)"""
+3,-9.958200138962889,-19.694759144457446,9.736559005494557,"""lambda x: tuple_(not_(e_(get_(x, i, ""open""), get_(x, i, ""close""))), e_(get_(x, i, ""high""), get_(x, i, ""open"")), 1, 4.5)"""
+4,-9.818241644511891,-19.694759144457446,9.876517499945555,"""lambda x: tuple_(not_(e_(get_(x, i, ""high""), get_(x, i, ""low""))), e_(get_(x, i, ""high""), get_(x, i, ""open"")), 1, 5.0)"""
+5,-9.818241644511891,-19.694759144457446,9.876517499945555,"""lambda x: tuple_(not_(e_(get_(x, i, ""low""), get_(x, i, ""close""))), e_(get_(x, i, ""high""), get_(x, i, ""open"")), 1, 5.0)"""
+6,-9.818241644511891,-19.694759144457446,9.876517499945555,"""lambda x: tuple_(not_(e_(get_(x, i, ""open""), get_(x, i, ""close""))), e_(get_(x, i, ""high""), get_(x, i, ""open"")), 1, 5.0)"""
+7,-9.818241644511891,-19.694759144457446,9.876517499945555,"""lambda x: tuple_(not_(e_(get_(x, i, ""high""), get_(x, i, ""close""))), e_(get_(x, i, ""high""), get_(x, i, ""open"")), 1, 5.0)"""
+8,-9.595098093197683,-19.471615593143238,9.876517499945555,"""lambda x: tuple_(le_(get_(x, i, ""close""), get_(x, i, ""high"")), e_(get_(x, i, ""high""), get_(x, i, ""open"")), 1, 5.0)"""
+9,-9.595098093197683,-19.471615593143238,9.876517499945555,"""lambda x: tuple_(le_(get_(x, i, ""high""), get_(x, i, ""high"")), e_(get_(x, i, ""high""), get_(x, i, ""open"")), 1, 5.0)"""

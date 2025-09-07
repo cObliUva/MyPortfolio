@@ -1,0 +1,11 @@
+,posterior,prior,likelihood,rule
+0,-14.6652773134408,-18.1082150518892,3.4429377384483995,"""lambda x: tuple_(g_(get_(x, i, ""RSI-based MA""), get_(x, i, ""RSI"")), g_(get_(x, i, ""MACD""), get_(x, i, ""Histogram"")), 1, 0)"""
+1,-14.6652773134408,-18.1082150518892,3.4429377384483995,"""lambda x: tuple_(l_(get_(x, i, ""RSI""), get_(x, i, ""RSI-based MA"")), g_(get_(x, i, ""MACD""), get_(x, i, ""Histogram"")), 1, 0)"""
+2,-14.601709310010996,-18.941583493020026,4.33987418300903,"""lambda x: tuple_(le_(get_(x, i, ""high""), getp_(x, i, 1, ""open"")), ge_(get_(x, i, ""MACD""), get_(x, i, ""Histogram"")), 1, 0)"""
+3,-14.339616788895825,-18.331358603203412,3.991741814307588,"""lambda x: tuple_(le_(get_(x, i, ""Signal""), get_(x, i, ""Histogram"")), not_(ge_(get_(x, i, ""Histogram""), get_(x, i, ""MACD""))), 1, 0)"""
+4,-14.339616788895825,-18.331358603203412,3.991741814307588,"""lambda x: tuple_(g_(get_(x, i, ""Histogram""), get_(x, i, ""Signal"")), not_(le_(get_(x, i, ""MACD""), get_(x, i, ""Histogram""))), 1, 0)"""
+5,-14.339616788895823,-18.331358603203412,3.991741814307589,"""lambda x: tuple_(g_(get_(x, i, ""Histogram""), get_(x, i, ""MACD"")), not_(le_(get_(x, i, ""MACD""), get_(x, i, ""Histogram""))), 1, 0)"""
+6,-14.339616788895823,-18.331358603203412,3.991741814307589,"""lambda x: tuple_(le_(get_(x, i, ""MACD""), get_(x, i, ""Histogram"")), not_(ge_(get_(x, i, ""Histogram""), get_(x, i, ""MACD""))), 1, 0)"""
+7,-14.116473237581612,-18.1082150518892,3.991741814307588,"""lambda x: tuple_(ge_(get_(x, i, ""Histogram""), get_(x, i, ""Signal"")), g_(get_(x, i, ""MACD""), get_(x, i, ""Histogram"")), 1, 0)"""
+8,-14.11647323758161,-18.1082150518892,3.991741814307589,"""lambda x: tuple_(le_(get_(x, i, ""MACD""), get_(x, i, ""Histogram"")), l_(get_(x, i, ""Histogram""), get_(x, i, ""MACD"")), 1, 0)"""
+9,-14.11647323758161,-18.1082150518892,3.991741814307589,"""lambda x: tuple_(ge_(get_(x, i, ""Histogram""), get_(x, i, ""MACD"")), g_(get_(x, i, ""MACD""), get_(x, i, ""Histogram"")), 1, 0)"""

@@ -1,0 +1,11 @@
+,posterior,prior,likelihood,rule
+0,224.14397037809889,-38.97672719458577,263.12069757268466,"""lambda x: tuple_(le_(get_(x, i, ""high""), getp_(x, i, 27, ""low"")), or_(getp_(x, i, 33, ""bearish_engulfing""), e_(get_(x, i, ""Histogram""), 16)), 1, 2.0)"""
+1,225.81794681167057,-37.302750761014096,263.12069757268466,"""lambda x: tuple_(le_(get_(x, i, ""high""), getp_(x, i, 27, ""low"")), or_(getp_(x, i, 33, ""bearish_engulfing""), e_(get_(x, i, ""ADX""), 3)), 1, 2.0)"""
+2,225.81794681167057,-37.302750761014096,263.12069757268466,"""lambda x: tuple_(le_(get_(x, i, ""high""), getp_(x, i, 27, ""low"")), or_(getp_(x, i, 33, ""bearish_engulfing""), e_(get_(x, i, ""MACD""), 3)), 1, 2.0)"""
+3,225.81794681167057,-37.302750761014096,263.12069757268466,"""lambda x: tuple_(le_(get_(x, i, ""high""), getp_(x, i, 27, ""low"")), or_(getp_(x, i, 33, ""bearish_engulfing""), e_(get_(x, i, ""Histogram""), 3)), 1, 2.0)"""
+4,225.81794681167057,-37.302750761014096,263.12069757268466,"""lambda x: tuple_(le_(get_(x, i, ""high""), getp_(x, i, 27, ""low"")), or_(getp_(x, i, 33, ""bearish_engulfing""), e_(get_(x, i, ""Signal""), 3)), 1, 2.0)"""
+5,230.70423226774824,-27.394072586288072,258.0983048540363,"""lambda x: tuple_(not_(l_(get_(x, i, ""RSI-based MA""), getp_(x, i, 63, ""RSI""))), not_(g_(get_(x, i, ""low""), getp_(x, i, 1, ""low""))), 1, 0)"""
+6,248.04065947744357,-27.31138087044296,275.35204034788654,"""lambda x: tuple_(not_(l_(get_(x, i, ""RSI-based MA""), getp_(x, i, 58, ""RSI-based MA""))), not_(g_(get_(x, i, ""low""), getp_(x, i, 1, ""low""))), 1, 0)"""
+7,249.72041708435728,-27.394072586288072,277.11448967064536,"""lambda x: tuple_(not_(l_(get_(x, i, ""RSI-based MA""), getp_(x, i, 63, ""RSI-based MA""))), not_(g_(get_(x, i, ""low""), getp_(x, i, 1, ""low""))), 1, 0)"""
+8,249.9435606356715,-27.17092903497386,277.11448967064536,"""lambda x: tuple_(not_(l_(get_(x, i, ""RSI-based MA""), getp_(x, i, 63, ""RSI-based MA""))), le_(get_(x, i, ""low""), getp_(x, i, 1, ""low"")), 1, 0)"""
+9,252.02505563056567,-27.122138870804427,279.1471945013701,"""lambda x: tuple_(not_(l_(get_(x, i, ""RSI-based MA""), getp_(x, i, 60, ""RSI-based MA""))), le_(get_(x, i, ""low""), getp_(x, i, 1, ""low"")), 1, 0)"""

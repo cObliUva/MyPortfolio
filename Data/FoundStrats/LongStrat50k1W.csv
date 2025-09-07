@@ -1,0 +1,11 @@
+,posterior,prior,likelihood,rule
+0,-10.178296872099372,-19.89492244099486,9.71662556889549,"""lambda x: tuple_(not_(e_(get_(x, i, ""Signal""), 1)), get_(x, i, ""standard_doji""), 1, 5.0)"""
+1,-10.166497188545984,-21.974363982674696,11.807866794128712,"""lambda x: tuple_(not_(get_(x, i, ""standard_doji"")), le_(get_(x, i, ""close""), getp_(x, i, 3, ""low"")), 1, 5.5)"""
+2,-10.159560664909195,-20.65260814269238,10.493047477783184,"""lambda x: tuple_(ge_(get_(x, i, ""low""), getp_(x, i, 1, ""low"")), get_(x, i, ""standard_doji""), 1, 4.5)"""
+3,-9.90238715463585,-20.14178251892639,10.23939536429054,"""lambda x: tuple_(g_(get_(x, i, ""close""), getp_(x, i, 1, ""close"")), get_(x, i, ""standard_doji""), 1, 0)"""
+4,-9.898832005853182,-20.3649260702406,10.466094064387418,"""lambda x: tuple_(not_(get_(x, i, ""hammer"")), le_(get_(x, i, ""low""), getp_(x, i, 1, ""low"")), 1, 0)"""
+5,-9.546279834774165,-20.65260814269238,11.106328307918215,"""lambda x: tuple_(ge_(get_(x, i, ""low""), getp_(x, i, 1, ""open"")), get_(x, i, ""morning_star""), 1, 5.0)"""
+6,-9.543298219853792,-20.65260814269238,11.109309922838587,"""lambda x: tuple_(ge_(get_(x, i, ""low""), getp_(x, i, 1, ""open"")), get_(x, i, ""morning_star""), 1, 5.5)"""
+7,-9.319297835089454,-20.65260814269238,11.333310307602925,"""lambda x: tuple_(ge_(get_(x, i, ""low""), getp_(x, i, 1, ""open"")), get_(x, i, ""morning_star""), 1, 4.5)"""
+8,-9.317963429273611,-18.512988048115197,9.195024618841586,"""lambda x: tuple_(not_(get_(x, i, ""dragonfly_doji"")), get_(x, i, ""shooting_star""), 1, 0)"""
+9,-8.836128824576436,-20.65260814269238,11.816479318115944,"""lambda x: tuple_(ge_(get_(x, i, ""low""), getp_(x, i, 1, ""low"")), get_(x, i, ""morning_star""), 1, 4.5)"""

@@ -6,7 +6,41 @@ Input: Price data
 
 Output: Optimal Trade Strategies
 
-Likelihood, computed by 
+### NEW Step Plan To Trading-Bot
+1. Make search-space smaller yet more advanced, by streamlining comparisons (e.g., open, close etc should not be compared to arbitrary numbers).
+    - Think of multiple different strategies that you want the model to search in, and optimize the search-space with it.
+2. First complete the 1 Day - Week trading strategy prototype, and backtest on other data.
+    -  Create more advanced features that are low in train-time complexity (pivot-high/low detection, and price-range logic (kda), RSI-divergence)
+3. Create a second model that creates swing-trade strategies on 1 day - 1 hour time-frame. (Create a new file for this, but use a lot of the same code as a framework).
+4. Create a scalping strategy that works with 1 hours to 5 min data.
+    - Use the strategy and create a tradingbot that would use API of a crypto exchange to actually make trades.
+    - Create trading data dashboard (i.e., already created plots + trade data, but also store trade data in csv and create good tables of performance).
+    - First do paper-trading with the bot on live data.
+
+
+### Long-term Strategy elements
+1. RSI, and other indicators between 0-100 need be be able to be compared with a constant. --- DONE
+2. Candle data should only be compared to previous candle data. --- DONE
+3. Specific strategies to include are:
+    - Candle patterns (doji etc) --- DONE
+    - RSI divergence
+    - Price level resistence / support zones.
+4. Change the posterior computation, as prior weighs more than likelihood now, making rules with logic operators impossible
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ### OLD Step Plan
@@ -19,14 +53,6 @@ Likelihood, computed by
 7. Get good strategy that makes sense.
 8. Combine time-frames to make more holistically informed decisions.
 
-### NEW Step Plan To Trading-Bot
-1. First complete the 1 Day - Week trading strategy prototype, and backtest on other data.
-    -  Create more advanced features that are low in train-time complexity (pivot-high/low detection, and price-range logic (kda), RSI-divergence)
-2. Create a second model that creates swing-trade strategies on 1 day - 1 hour time-frame. (Create a new file for this, but use a lot of the same code as a framework).
-3. Create a scalping strategy that works with 1 hours to 5 min data.
-    - Use the strategy and create a tradingbot that would use API of a crypto exchange to actually make trades.
-    - Create trading data dashboard (i.e., already created plots + trade data, but also store trade data in csv and create good tables of performance).
-    - First do paper-trading with the bot on live data.
 
 ### Symbolic Regression Implementation
 Data = Price and indicator per candle
@@ -59,4 +85,4 @@ Comes from (Menoita & Silva, 2025).
 
 
 **Solution 1:** Create rules
-
+Implemented the likelihood function as a function of the summed profit over all trades for a given trading strategy. Profit here is affected by trading fees and adjusted by sharpe for consistency.

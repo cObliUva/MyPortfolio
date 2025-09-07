@@ -1,0 +1,11 @@
+,posterior,prior,likelihood,rule
+0,10111.27828077303,-34.91878490747211,10146.1970656805,"""lambda x: tuple_(and_(ge_(get_(x, i, ""RSI""), 81), not_(get_(x, i, ""inverted_hammer""))), l_(get_(x, i, ""RSI-based MA""), 56), 1, 0)"""
+1,10111.27828077303,-34.91878490747211,10146.1970656805,"""lambda x: tuple_(and_(ge_(get_(x, i, ""RSI""), 81), not_(get_(x, i, ""dragonfly_doji""))), l_(get_(x, i, ""RSI-based MA""), 56), 1, 0)"""
+2,10111.27828077303,-34.91878490747211,10146.1970656805,"""lambda x: tuple_(and_(ge_(get_(x, i, ""RSI""), 81), not_(get_(x, i, ""bearish_engulfing""))), l_(get_(x, i, ""RSI-based MA""), 56), 1, 0)"""
+3,10111.27828077303,-34.91878490747211,10146.1970656805,"""lambda x: tuple_(and_(ge_(get_(x, i, ""RSI""), 81), not_(get_(x, i, ""standard_doji""))), l_(get_(x, i, ""RSI-based MA""), 56), 1, 0)"""
+4,10111.27828077303,-34.91878490747211,10146.1970656805,"""lambda x: tuple_(and_(ge_(get_(x, i, ""RSI""), 81), not_(get_(x, i, ""red""))), l_(get_(x, i, ""RSI-based MA""), 56), 1, 0)"""
+5,10111.27828077303,-34.91878490747211,10146.1970656805,"""lambda x: tuple_(and_(ge_(get_(x, i, ""RSI""), 81), not_(get_(x, i, ""shooting_star""))), l_(get_(x, i, ""RSI-based MA""), 56), 1, 0)"""
+6,10111.27828077303,-34.91878490747211,10146.1970656805,"""lambda x: tuple_(and_(ge_(get_(x, i, ""RSI""), 81), not_(get_(x, i, ""bullish_engulfing""))), l_(get_(x, i, ""RSI-based MA""), 56), 1, 0)"""
+7,10111.27828077303,-34.91878490747211,10146.1970656805,"""lambda x: tuple_(and_(ge_(get_(x, i, ""RSI""), 81), not_(get_(x, i, ""evening_star""))), l_(get_(x, i, ""RSI-based MA""), 56), 1, 0)"""
+8,10111.27828077303,-34.91878490747211,10146.1970656805,"""lambda x: tuple_(and_(ge_(get_(x, i, ""RSI""), 81), not_(get_(x, i, ""hanging_man""))), l_(get_(x, i, ""RSI-based MA""), 56), 1, 0)"""
+9,10111.501424324342,-34.69564135615789,10146.1970656805,"""lambda x: tuple_(and_(ge_(get_(x, i, ""RSI""), 81), get_(x, i, ""green"")), l_(get_(x, i, ""RSI-based MA""), 56), 1, 0)"""

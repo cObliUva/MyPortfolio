@@ -1,0 +1,11 @@
+,posterior,prior,likelihood,rule
+0,-10.071775768015591,-19.384096817228873,9.312321049213281,"""lambda x: tuple_(not_(le_(get_(x, i, ""ADX""), 1)), get_(x, i, ""morning_star""), 1, 0)"""
+1,-9.317963429273611,-18.512988048115197,9.195024618841586,"""lambda x: tuple_(not_(get_(x, i, ""dragonfly_doji"")), get_(x, i, ""shooting_star""), 1, 0)"""
+2,-8.824959999715237,-20.65260814269238,11.827648142977143,"""lambda x: tuple_(get_(x, i, ""inverted_hammer""), le_(get_(x, i, ""high""), getp_(x, i, 1, ""close"")), 1, 5.5)"""
+3,-8.815461247483475,-20.65260814269238,11.837146895208905,"""lambda x: tuple_(get_(x, i, ""inverted_hammer""), le_(get_(x, i, ""high""), getp_(x, i, 1, ""close"")), 1, 1.5)"""
+4,-8.744236050899595,-20.65260814269238,11.908372091792785,"""lambda x: tuple_(get_(x, i, ""inverted_hammer""), le_(get_(x, i, ""high""), getp_(x, i, 1, ""close"")), 1, 1.0)"""
+5,-8.673374508723365,-20.65260814269238,11.979233633969015,"""lambda x: tuple_(get_(x, i, ""inverted_hammer""), le_(get_(x, i, ""high""), getp_(x, i, 1, ""close"")), 1, 0.5)"""
+6,-8.593461934245664,-20.65260814269238,12.059146208446716,"""lambda x: tuple_(get_(x, i, ""inverted_hammer""), le_(get_(x, i, ""high""), getp_(x, i, 1, ""close"")), 1, 3.5)"""
+7,-8.574982921422054,-20.65260814269238,12.077625221270326,"""lambda x: tuple_(get_(x, i, ""inverted_hammer""), le_(get_(x, i, ""high""), getp_(x, i, 1, ""close"")), 1, 3.0)"""
+8,-8.512996255839772,-20.65260814269238,12.139611886852608,"""lambda x: tuple_(get_(x, i, ""inverted_hammer""), le_(get_(x, i, ""high""), getp_(x, i, 1, ""close"")), 1, 2.5)"""
+9,-8.451329996883903,-20.65260814269238,12.201278145808477,"""lambda x: tuple_(get_(x, i, ""inverted_hammer""), le_(get_(x, i, ""high""), getp_(x, i, 1, ""close"")), 1, 2.0)"""

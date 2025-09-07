@@ -1,0 +1,11 @@
+,posterior,prior,likelihood,rule
+0,-16.49289605715224,-20.136363299181486,3.6434672420292467,"""lambda x: tuple_(g_(get_(x, i, ""ADX""), get_(x, i, ""RSI-based MA"")), l_(get_(x, i, ""ADX""), get_(x, i, ""RSI-based MA"")), 1, 0)"""
+1,-16.277447474097567,-20.136363299181486,3.8589158250839177,"""lambda x: tuple_(g_(get_(x, i, ""ADX""), get_(x, i, ""RSI"")), l_(get_(x, i, ""ADX""), get_(x, i, ""RSI-based MA"")), 1, 0)"""
+2,-16.277447474097567,-20.136363299181486,3.8589158250839177,"""lambda x: tuple_(g_(get_(x, i, ""ADX""), get_(x, i, ""RSI"")), le_(get_(x, i, ""ADX""), get_(x, i, ""RSI-based MA"")), 1, 0)"""
+3,-16.259401719108798,-20.647188922947475,4.387787203838676,"""lambda x: tuple_(g_(get_(x, i, ""ADX""), get_(x, i, ""RSI"")), l_(get_(x, i, ""Signal""), get_(x, i, ""MACD"")), 1, 5.5)"""
+4,-16.008480358895227,-20.582650401809907,4.5741700429146785,"""lambda x: tuple_(not_(g_(get_(x, i, ""Signal""), get_(x, i, ""RSI-based MA""))), not_(ge_(get_(x, i, ""RSI-based MA""), get_(x, i, ""ADX""))), 1, 0)"""
+5,-16.008480358895227,-20.582650401809907,4.5741700429146785,"""lambda x: tuple_(not_(g_(get_(x, i, ""Histogram""), get_(x, i, ""RSI-based MA""))), not_(ge_(get_(x, i, ""RSI-based MA""), get_(x, i, ""ADX""))), 1, 0)"""
+6,-15.78533680758102,-20.3595068504957,4.5741700429146785,"""lambda x: tuple_(le_(get_(x, i, ""ADX""), get_(x, i, ""ADX"")), not_(ge_(get_(x, i, ""RSI-based MA""), get_(x, i, ""ADX""))), 1, 0)"""
+7,-15.78533680758102,-20.3595068504957,4.5741700429146785,"""lambda x: tuple_(l_(get_(x, i, ""MACD""), get_(x, i, ""Histogram"")), not_(ge_(get_(x, i, ""RSI-based MA""), get_(x, i, ""ADX""))), 1, 0)"""
+8,-15.67699237450797,-20.3595068504957,4.682514475987729,"""lambda x: tuple_(le_(get_(x, i, ""ADX""), get_(x, i, ""RSI"")), not_(ge_(get_(x, i, ""RSI-based MA""), get_(x, i, ""ADX""))), 1, 0)"""
+9,-15.637875995700119,-20.212046038614798,4.5741700429146785,"""lambda x: tuple_(g_(get_(x, i, ""RSI-based MA""), 1), not_(ge_(get_(x, i, ""RSI-based MA""), get_(x, i, ""ADX""))), 1, 0)"""

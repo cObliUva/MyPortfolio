@@ -1,3 +1,5 @@
+import pandas as pd
+
 def exitTrade(t, entry_value):
     """
     This function exits the trade by creating a trade description to be added to a list of trades. 
@@ -6,16 +8,16 @@ def exitTrade(t, entry_value):
     pct_change = (t['ex_p'] - t['en_p']) / t['en_p']
 
     # compute profit based on value change minus transaction cost
-    profit = (pct_change * entry_value) - (entry_value * 0.004 + pct_change * entry_value * 0.004)
+    profit = (pct_change * entry_value) - (entry_value * 0.004 + (1 + pct_change) * entry_value * 0.004)
 
     TradeDescription = {
-        'entry-time': t['en_t'],
         'entry-price': t['en_p'],
-        'exit-time': t['ex_t'],
         'exit-price': t['ex_p'],
-        'time-transpired': t['ex_t'] - t['en_t'],
-        'pct_change': pct_change,
-        'profit': profit
+        'pct_change': pct_change * 100,
+        'profit': profit,
+        'entry-time': t['en_t'],
+        'exit-time': t['ex_t'],
+        'time-transpired': t['ex_t'] - t['en_t']
         }
     
     return TradeDescription, profit
@@ -46,21 +48,24 @@ def TradeSim(program, priceD):
             entry_price = row['close']
             entry_time = row['time']
 
-            # compute the trade size
+            # compute the trade size and respective sloss
             entry_value = trade_size * funds
+
+            # assign SLossPrice sloss, if sloss is not 0 then assign it the actual stop loss price
+            if SLossPrice := sloss:
+                SLossPrice = entry_price - entry_price * (sloss/100)
 
         # if it's in a trade and a valid exit is indicated then finish the trade
         elif in_trade:
 
             # if the stop loss condition is met
-            if row['low'] < (entry_price - entry_price * (sloss/100)):
+            if row['low'] <= SLossPrice:
 
                 # store stop loss price as exist price
-                exit_price = entry_price - entry_price * (sloss/100)
                 exit_time = row['time']
 
                 # store the info of the trade
-                trade_info = {'en_t': entry_time, 'en_p':entry_price, 'ex_p': exit_price, 'ex_t': exit_time}
+                trade_info = {'en_t': entry_time, 'en_p': entry_price, 'ex_p': SLossPrice, 'ex_t': exit_time}
 
                 # exit the trade and store its information and resulting profit
                 tradeFinal, profit = exitTrade(trade_info, entry_value)
@@ -96,4 +101,4 @@ def TradeSim(program, priceD):
                 # allow new trades
                 in_trade = False
 
-    return trades
+    return pd.DataFrame(trades)

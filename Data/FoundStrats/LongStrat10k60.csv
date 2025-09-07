@@ -1,0 +1,11 @@
+,posterior,prior,likelihood,rule
+0,-17.307773637220347,-33.81220444915482,16.504430811934473,"""lambda x: tuple_(le_(get_(x, i, ""RSI-based MA""), getp_(x, i, 25, ""ADX"")), and_(get_(x, i, ""hammer""), not_(l_(get_(x, i, ""MACD""), getp_(x, i, 1, ""Signal"")))), 1, 2.5)"""
+1,-17.116288155475484,-25.536829511932975,8.420541356457491,"""lambda x: tuple_(not_(l_(get_(x, i, ""ADX""), getp_(x, i, 47, ""RSI-based MA""))), get_(x, i, ""morning_star""), 1, 4.0)"""
+2,-17.116288155475484,-25.536829511932975,8.420541356457491,"""lambda x: tuple_(not_(l_(get_(x, i, ""ADX""), getp_(x, i, 47, ""RSI-based MA""))), get_(x, i, ""morning_star""), 1, 5.5)"""
+3,-17.116288155475484,-25.536829511932975,8.420541356457491,"""lambda x: tuple_(not_(l_(get_(x, i, ""ADX""), getp_(x, i, 47, ""RSI-based MA""))), get_(x, i, ""morning_star""), 1, 5.0)"""
+4,-16.79694801345435,-33.301378825388824,16.504430811934473,"""lambda x: tuple_(le_(get_(x, i, ""RSI-based MA""), getp_(x, i, 25, ""ADX"")), and_(get_(x, i, ""hammer""), not_(l_(get_(x, i, ""MACD""), getp_(x, i, 1, ""Signal"")))), 1, 0)"""
+5,-15.66347497987319,-32.16790579180766,16.504430811934473,"""lambda x: tuple_(le_(get_(x, i, ""RSI-based MA""), getp_(x, i, 25, ""ADX"")), and_(get_(x, i, ""hammer""), not_(ge_(get_(x, i, ""ADX""), get_(x, i, ""RSI"")))), 1, 4.0)"""
+6,-15.1526493561072,-31.657080168041674,16.504430811934473,"""lambda x: tuple_(le_(get_(x, i, ""RSI-based MA""), getp_(x, i, 25, ""ADX"")), and_(get_(x, i, ""hammer""), not_(ge_(get_(x, i, ""ADX""), get_(x, i, ""RSI"")))), 1, 0)"""
+7,-15.1526493561072,-31.657080168041674,16.504430811934473,"""lambda x: tuple_(le_(get_(x, i, ""RSI-based MA""), getp_(x, i, 25, ""ADX"")), and_(get_(x, i, ""hammer""), not_(ge_(get_(x, i, ""ADX""), get_(x, i, ""RSI-based MA"")))), 1, 0)"""
+8,-11.89814500958975,-25.536829511932975,13.638684502343224,"""lambda x: tuple_(not_(l_(get_(x, i, ""ADX""), getp_(x, i, 47, ""RSI-based MA""))), get_(x, i, ""hammer""), 1, 5.0)"""
+9,-11.89814500958975,-25.536829511932975,13.638684502343224,"""lambda x: tuple_(not_(l_(get_(x, i, ""ADX""), getp_(x, i, 47, ""RSI-based MA""))), get_(x, i, ""hammer""), 1, 5.5)"""
